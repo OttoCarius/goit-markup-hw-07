@@ -16,18 +16,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <style>
-      li {
-        list-style-type: none;
-      }
-    </style>
   </head>
   <body>
     <!--Шапка-->
     <header class="header">
       <div class="container page-header">
         <a href="./index.html" class="header__logo"
-          ><span class="header__logo--secondary">Web</span>Studio</a>
+          ><span class="header__logo--secondary">Web</span>Studio</a
+        >
         <!-- Header -  Navigation -->
         <nav class="navigation">
           <ul class="navigation__list">
@@ -62,10 +58,10 @@
       </div>
     </header>
 
-                                             <!--КОНТЕНТ-->
+    <!--КОНТЕНТ-->
     <main>
       <!--Кнопка-->
-      <section class="hero"> 
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
@@ -241,7 +237,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img.jpg" alt="Михаил" width="270"/>
+              <img src="./images/img.jpg" alt="Михаил" width="270" />
               <div class="team__pictures">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__job">UI Designer</p>
@@ -328,21 +324,24 @@
     </main>
     <!-- FOOTER -->
     <footer class="page-footer">
-      <div class="container page-footer--display"> 
+      <div class="container page-footer--display">
         <div>
-          <a href="./index.html" class="page-footer__logo"> <span class="page-footer__logo--secondary">Web</span>Studio </a> 
-          
-          
+          <a href="./index.html" class="page-footer__logo">
+            <span class="page-footer__logo--secondary">Web</span>Studio
+          </a>
+
           <address class="address">
             <p>г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="address__list">
-              <li><a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a></li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+              </li>
               <li><a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a></li>
             </ul>
           </address>
         </div>
 
-                                               <!-- Footer - Join -->
+        <!-- Footer - Join -->
         <div class="join">
           <p>присоединяйтесь</p>
           <ul class="join__list">
@@ -367,7 +366,7 @@
                 </svg>
               </a>
             </li>
-              <li class="join__item">
+            <li class="join__item">
               <a href="" class="join__link">
                 <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
@@ -380,18 +379,26 @@
           <form class="subscription__form">
             <label class="subscription__title" for="email">Подпишитесь на рассылку</label>
             <div class="subscription__wrapper">
-            <input class="subscription__input" type="email" name="mail" id="email" placeholder="E-mail">
-            <button class="subscription__btn" type="submit">Подписаться  <svg class="subscription__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg></button>
-          </div>
+              <input
+                class="subscription__input"
+                type="email"
+                name="mail"
+                id="email"
+                placeholder="E-mail"
+              />
+              <button class="subscription__btn" type="submit">
+                Подписаться
+                <svg class="subscription__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
 
-
-                                   <!-- Modal -->
+    <!-- Modal -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -431,22 +438,31 @@
             <textarea
               name="form-comment"
               id="form-comment"
-              class="fieldset__comment" 
+              class="fieldset__comment"
               rows="8"
               placeholder="Введите текст"
             ></textarea>
           </div>
-                                             <!-- Checkbox -->
+          <!-- Checkbox -->
 
           <div class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="form-checkbox" id="form-checkbox" />
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="form-checkbox"
+              id="form-checkbox"
+            />
             <label class="checkbox__lable" for="form-checkbox">
-				<span> <svg class="checkbox__icon" width="11" height="8">
-					<use href="./images/icons.svg#icon-check"></use>
-				</svg> </span>
-				Соглашаюсь с рассылкой и принимаю  <a href="" class="checkbox__terms">   Условия договора</a></label>
-				</div>
-         <button class="fieldset__send" type="submit">Отправить</button>
+              <span>
+                <svg class="checkbox__icon" width="11" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="checkbox__terms"> Условия договора</a></label
+            >
+          </div>
+          <button class="fieldset__send" type="submit">Отправить</button>
         </form>
       </div>
     </div>
