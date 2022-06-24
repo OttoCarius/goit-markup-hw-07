@@ -1032,6 +1032,11 @@ border-color:var(--colorSecondary);}
 
 
     /* < !-- Портфолио Проэктов --> */
+.projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
 
 .projects__list{
     display: flex;
